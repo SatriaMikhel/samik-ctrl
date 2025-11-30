@@ -3,94 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VEXON - Game Controllers</title>
+    <title>VEXON | Next Gen Gaming</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="glow glow-1"></div>
-    <div class="glow glow-2"></div>
+    <div class="ambient-light blue"></div>
+    <div class="ambient-light purple"></div>
 
-    <main class="container">
-        <nav class="navbar glass-panel">
+    <div class="wrapper">
+        <header class="glass-header">
             <div class="logo">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M10 8l6 4-6 4V8z"/></svg>
-                <span>VEXON</span>
+                <span class="logo-icon">⌘</span> VEXON
             </div>
-            <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Order Now</a></li>
-            </ul>
-        </nav>
-
-        <section class="bento-grid">
             
-            <div class="card product-hero glass-panel">
-                <div class="badge">VIEW IN 3D</div>
-                <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=600&q=80" alt="White Controller" class="controller-img main-img">
-                <div class="product-info">
-                    <h3>VEXON ONE</h3>
-                    <p>$499</p>
-                    <button class="btn-add">+</button>
-                </div>
-            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-            <div class="card product-center glass-panel">
-                <div class="center-content">
-                    <span class="icon-brand">⌘</span>
-                    <h4>VEXON</h4>
-                    <small>GAME BEYOND LIMITS</small>
-                    <div class="image-wrapper">
-                        <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d88?auto=format&fit=crop&w=500&q=80" alt="Black Controller">
+            <nav class="nav-menu">
+                <a href="#" class="active">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Technology</a>
+                <a href="#" class="btn-primary">Order Now</a>
+            </nav>
+        </header>
+
+        <main class="bento-grid">
+            
+            <article class="card product-light area-hero">
+                <div class="card-header">
+                    <span class="badge">NEW ARRIVAL</span>
+                    <button class="btn-icon">+</button>
+                </div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=600&q=80" alt="Vexon One White">
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <h3>VEXON ONE</h3>
+                        <p class="price">$499</p>
                     </div>
-                    <div class="line-connector"></div>
                 </div>
-            </div>
+            </article>
 
-            <div class="card content-text glass-panel">
-                <h1>STEP INTO WORLDS <br> BEYOND REALITY. <br> <span class="highlight">PLAY WITHOUT LIMITS.</span></h1>
+            <article class="card product-dark area-center">
+                <div class="vertical-content">
+                    <div class="brand-mark">
+                        <span class="icon">⌘</span>
+                        <span class="label">VEXON SERIES</span>
+                    </div>
+                    
+                    <div class="img-container-center">
+                         <div class="glow-ring"></div>
+                         <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d88?auto=format&fit=crop&w=500&q=80" alt="Black Elite Controller">
+                    </div>
+
+                    <div class="specs">
+                        <small>HAPTIC FEEDBACK</small>
+                        <div class="line"></div>
+                        <small>ADAPTIVE TRIGGERS</small>
+                    </div>
+                </div>
+            </article>
+
+            <section class="card content-main area-text">
+                <h1>STEP INTO WORLDS <br> <span class="text-gradient">BEYOND REALITY.</span></h1>
+                <p class="subtitle">Experience zero-latency connection with the new quantum-core processor.</p>
                 
-                <div class="cta-group">
-                    <button class="btn-explore">EXPLORE</button>
-                    <button class="btn-arrow">↗</button>
-                    <div class="mini-preview">
-                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=100&q=80" alt="preview">
+                <div class="action-group">
+                    <button class="btn-explore">EXPLORE SPECS</button>
+                    <a href="#" class="link-arrow">↗</a>
+                    <div class="preview-pill">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=100&q=80" alt="Thumb">
+                        <span>Intro</span>
                     </div>
                 </div>
+            </section>
 
-                <ul class="features-list">
-                    <li>
-                        <span class="num">01</span>
-                        <span class="desc">IMMERSIVE WORLDS. RENDERED IN RAZOR-SHARP 4K</span>
-                        <span class="year">/2025</span>
-                    </li>
-                    <li>
-                        <span class="num">02</span>
-                        <span class="desc">INSTANT LOADING. JUMP FROM MENU TO MATCH IN SECONDS</span>
-                        <span class="year">/2025</span>
-                    </li>
-                    <li>
-                        <span class="num">03</span>
-                        <span class="desc">ADAPTIVE CONTROLLERS THAT RESPOND TO EVERY MOVE</span>
-                        <span class="year">/2025</span>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="card product-small glass-panel">
-                <button class="btn-add top-left">+</button>
-                <img src="https://images.unsplash.com/photo-1599582136932-5a213e481137?auto=format&fit=crop&w=400&q=80" alt="VR Controller">
-                <div class="product-info-bottom">
-                    <h3>ECLIPSE VRX</h3>
-                    <p>$499</p>
+            <section class="card content-list area-list">
+                <div class="feature-item">
+                    <span class="f-num">01</span>
+                    <p>IMMERSIVE 4K RENDERING & HAPTICS</p>
+                    <span class="f-year">/2025</span>
                 </div>
-            </div>
+                <div class="feature-item">
+                    <span class="f-num">02</span>
+                    <p>INSTANT LOAD & QUICK RESUME</p>
+                    <span class="f-year">/2025</span>
+                </div>
+                <div class="feature-item">
+                    <span class="f-num">03</span>
+                    <p>ADAPTIVE AI ASSISTANCE</p>
+                    <span class="f-year">/2025</span>
+                </div>
+            </section>
 
-        </section>
-    </main>
+            <article class="card product-secondary area-sub">
+                <div class="card-header">
+                     <button class="btn-icon small">+</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1599582136932-5a213e481137?auto=format&fit=crop&w=400&q=80" alt="VR Gear">
+                <div class="card-footer">
+                    <h3>ECLIPSE VR</h3>
+                    <p class="price">$899</p>
+                </div>
+            </article>
+
+        </main>
+    </div>
 </body>
-  </html>
-  
+    </html>
+                    
